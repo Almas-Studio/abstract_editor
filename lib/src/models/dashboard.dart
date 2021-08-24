@@ -8,6 +8,6 @@ class Dashboard {
 
   final List<DashboardSection> sections;
 
-  const Dashboard(this.sections);
+  const Dashboard({required this.sections});
 
 }
