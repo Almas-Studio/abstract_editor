@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ElementType {
   final Widget icon;
   final String name;
-  final GestureTapCallback onTap;
+  final void Function(BuildContext context) onTap;
   final bool selected;
 
  const ElementType({
