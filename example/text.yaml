@@ -1,0 +1,6 @@
+name: Text
+localization: text_localizations.csv
+state:
+  - name: font
+    type: String
+    default: Vazir
