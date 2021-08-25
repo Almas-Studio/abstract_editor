@@ -1,19 +1,18 @@
-import 'package:flutter/material.dart';
+
+import 'package:flutter/material.dart' hide Transform;
 
 import 'dashboard.dart';
 
-typedef EditorElementBuilder = Widget Function(
-    BuildContext context, bool selected);
+typedef EditorElementBuilder<T> = Widget Function(
+    BuildContext context, T model, bool selected);
 
-class ElementView {
+class ElementView<T> {
   final bool selectable;
-  final Transform transform;
-  final EditorElementBuilder builder;
+  final EditorElementBuilder<T> builder;
   final DashboardBuilder dashboardBuilder;
 
  const ElementView({
     required this.selectable,
-    required this.transform,
     required this.builder,
     required this.dashboardBuilder,
   });

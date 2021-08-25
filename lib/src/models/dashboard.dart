@@ -4,9 +4,9 @@ import 'dashboard_section.dart';
 
 typedef DashboardBuilder<T> = Dashboard Function(BuildContext context, T data);
 
-class Dashboard {
+class Dashboard<T> {
 
-  final List<DashboardSection> sections;
+  final List<DashboardSection<T>> sections;
 
   const Dashboard({required this.sections});
 

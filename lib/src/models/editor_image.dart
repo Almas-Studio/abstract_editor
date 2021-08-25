@@ -13,7 +13,7 @@ class ImageEditor {
   final VoidCallback onUndo;
   final VoidCallback onSave;
   final List<ElementType> elementTypes;
-  final List<ElementView> elementViews;
+  final Map<Type, ElementView> elementViews;
 
   const ImageEditor({
     required this.width,
