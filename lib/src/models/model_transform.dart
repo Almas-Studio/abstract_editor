@@ -1,8 +1,9 @@
 import 'dart:math';
 
+import 'package:abstract_editor/abstract_editor.dart';
 import 'package:flutter/material.dart';
 
-class Transform with ChangeNotifier {
+class Transform with ChangeNotifier, EditorElement {
   Transform([
     this._localOffset = const Offset(0, 0),
     this._size = const Size(128.0, 128.0),
